@@ -1,0 +1,25 @@
+<form class="login"   autocomplete="off">
+
+    <!-- (ngSubmit)="postdata(angForm)" -->
+
+    <!-- [formGroup]="angForm" -->
+
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" name="username" placeholder="Enter Username" name="uname" formControlName="username" autocomplete="off" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" formControlName="staff_password" autocomplete="off" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <p>Do not have any account? <a href="register">Click Here!</a></p>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+</form>
